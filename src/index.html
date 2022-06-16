@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12 - Materials</title>
+    <style>
+        .flex{
+            display: flex;
+            flex-flow: row;
+            justify-content: center;
+            align-items: center;
+        }
+        .flex-1{
+            flex: 1;
+        }
+        .container{
+            position: absolute;
+            z-index: 10;
+            color: white;
+            background: rgba(83, 50, 233, 0.5);
+            padding: 20px;
+            width: 300px;
+            border: 1px solid white;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <canvas class="webgl"></canvas>
+    <div class="container">
+        <div class="flex">
+            <div class="flex-1">Total Mass</div>
+            <div id="rocket-total-mass" class="flex-1"></div>
+        </div>
+        <div class="flex">
+            <div class="flex-1">Force Angle</div>
+            <div id="rocket-force_angle" class="flex-1"></div>
+        </div>
+    </div>
+</body>
+</html>
